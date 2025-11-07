@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - Selektory</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <p>Catch the Rainbow</p>
+        <p>Crazy Diamond</p>
+        <p>Heaven's Door</p>
+    </div>
+    <div>
+        <h1 id="title">Bezużyteczne fakty</h1>
+        <h2>stracisz czas na czytanie tekstu pod spodem</h2>
+    </div>
+    <div>
+        <ul class="lista">
+            <li>Linie lotnicze zaoszczędziły 40 tys. dolarów w 1987 r., 
+                eliminując jedną oliwkę z każdej sałatki serwowanej w pierwszej klasie.</li>
+            <li>Mount Everest prawdopodobnie skurczył się na skutek trzęsienia ziemi.</li>
+            <li>Ważki mają sześć nóg, ale nie potrafią chodzić</li>
+        </ul>
+    </div>
+</body>
+<script>
+    
+    $(document).ready(function() {
+        $("p").css("color", "blue");
+        $("#title").css("color", "purple");
+        $(".lista").css("font-size", "20px");
+    })
+
+</script>
+</html>
